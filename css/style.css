@@ -1,0 +1,264 @@
+:root {
+  --light-bg: #f1efea;       /* Cararra */
+  --primary-accent: #937a6b; /* Almond Frost */
+  --secondary-accent: #836e6e; /* Spicy Pink */
+  --text-dark: #23202a;      /* Baltic Sea */
+  --neutral: #808986;        /* Gunsmoke */
+  --optional-dark: #0e1d17;
+  --black: #000000;
+
+  --success-bg: #d4edda;
+  --success-text: #155724;
+  --error-bg: #f8d7da;
+  --error-text: #721c24;
+}
+
+/* ------------------------------
+   Reset / Base Styles
+------------------------------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--light-bg);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+/* ------------------------------
+   Container and Layout
+------------------------------- */
+.container {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+/* ------------------------------
+   Header
+------------------------------- */
+.page-header {
+  background-color: var(--primary-accent);
+  padding: 30px 20px;
+  border-radius: 15px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.page-header h1 {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+/* ------------------------------
+   Form Styling
+------------------------------- */
+.form-card {
+  background-color: white;
+  padding: 35px 30px;
+  border-radius: 12px;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: var(--neutral);
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+textarea {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.2s ease-in-out;
+  font-family: inherit;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--primary-accent);
+  box-shadow: 0 0 0 2px rgba(147, 122, 107, 0.2);
+}
+
+/* ------------------------------
+   Buttons
+------------------------------- */
+button {
+  width: 100%;
+  padding: 14px;
+  background-color: var(--secondary-accent);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+button:hover {
+  background-color: #28a745; 
+}
+
+
+/* ------------------------------
+   Messages
+------------------------------- */
+.msg {
+  margin-top: 20px;
+  padding: 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.success {
+  background-color: var(--success-bg);
+  color: var(--success-text);
+}
+
+.error {
+  background-color: var(--error-bg);
+  color: var(--error-text);
+}
+
+/* ------------------------------
+   Responsive
+------------------------------- */
+@media (max-width: 600px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .form-card {
+    padding: 25px 20px;
+  }
+
+  .page-header h1 {
+    font-size: 22px;
+  }
+}
+
+/* ------------------------------
+   Navbar Styling
+------------------------------- */
+.navbar {
+  background-color: var(--primary-accent);
+  padding: 15px 20px;
+  border-radius: 0 0 15px 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.marketplace-nav {
+  background: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: #937a6b; /* Primary - Almond Frost */
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #23202a; /* Dark - Baltic Sea */
+  font-family: 'Hind Guntur', sans-serif;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+  color: #937a6b; /* Primary - Almond Frost */
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.user-greeting {
+  font-family: 'Hind Guntur', sans-serif;
+  font-weight: 600;
+  color: #808986; /* Light Accent - Gunsmoke */
+}
+
+.nav-cart {
+  background: #937a6b; /* Primary - Almond Frost */
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 15%;
+  text-decoration: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: background 0.3s;
+}
+
+.nav-cart:hover {
+  background: #836e6e; /* Dark Accent - Spicy Pink */
+}
+
+.cart-badge {
+  background: #f01f03ff; /* Optional Accent - Dark Green */
+  color: white;
+  border-radius: 80%;
+  padding: 2px 6px;
+  font-size: 0.75rem;
+}
+
+.nav-logout {
+  background: #23202a; /* Dark - Baltic Sea */
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.nav-logout:hover {
+  background: #836e6e; /* Dark Accent - Spicy Pink */
+}
