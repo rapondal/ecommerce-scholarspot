@@ -62,8 +62,8 @@ ScholarSpot is a specialized e-commerce platform built with HTML,CSS,JAVASCRIPT,
 * admindashboard.php?page=activity_logs - Activity Logs that admin can view all the customer and admin accounts and view the time/date, role, action and details.
 * admindashboard.php?page=reports - Reports Management that admin can view the Analytics & Reports,Inventory Status reports, and print the digital report in a tabular form.
 
-## Developer Information
-* **Sole Solero**
+## Developers Information
+* **Group Name: Sole Solero**
 * **Members:**
 * Seon Soquena  - BSIT 2-A - Role (Front-end Developer and Documentation)
 * Renmar Doromal  - BSIT 2-A - Role (Back-end Developer and Documentation)
